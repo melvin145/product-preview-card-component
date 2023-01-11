@@ -20,7 +20,7 @@ body{
 }
 .img-box{
       width: 100%;
-      background-image: url('/images/image-product-desktop.jpg');
+      background-image: url('../images/image-product-desktop.jpg');
       background-repeat: no-repeat;
       background-position: center;
       flex-grow: 4;
@@ -95,6 +95,7 @@ body{
       .container{
             border: 1px solid white;
             width: 350px;
+            height: 600px;
             border-radius: 5px;
             display: flex;
             justify-content: center;
@@ -102,13 +103,15 @@ body{
       }
 
       .img-box{
-            width: 100%;
-            height: 250px;
-            background-image: url('/images/image-product-mobile.jpg');
+            background-image: url('../images/image-product-mobile.jpg');
             border-radius: 5px;
+            flex-basis: 150%;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+      }
+      .img-box img{
+            width: 100%;
       }
       .button button{
             background-color: hsl(158, 36%, 37%);
